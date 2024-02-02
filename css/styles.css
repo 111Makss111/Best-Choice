@@ -87,6 +87,11 @@ address {
   font-size: 15px;
   text-transform: uppercase;
   color: #fff;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.header-link:hover {
+  color: #c7a17a;
 }
 .header-link-active {
   color: #c7a17a;
@@ -97,8 +102,24 @@ address {
 }
 .header-menu-list {
 }
+
+.header-img-link:hover {
+  animation: rotate-scale-up 0.65s linear both;
+}
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 .header-img {
 }
+
 /** -------------------header------------------------- */
 /** --------------------HERO-------------------------- */
 .hero {
@@ -123,7 +144,6 @@ address {
   margin-bottom: 35px;
 }
 .hero-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   color: #dfdfdf;
@@ -131,7 +151,6 @@ address {
   margin-bottom: 35px;
 }
 .hero-btn-buy {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.1em;
@@ -154,6 +173,25 @@ address {
   background-color: rgba(199, 161, 122, 0);
   border: 1px solid #666681;
   border-radius: 10px;
+  transition: all 0.3s cubic-bezier(.17, .67, .83, .67);
+}
+.hero-btn-read:hover{
+  background-color: #c7a17a;
+}
+.header-icons {
+}
+.header-icon-link {
+  position: relative;
+}
+.header-menu-event {
+  display: block;
+  position: absolute;
+  top: -9px;
+  right: -2px;
+  background-color: #c7a17a;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
 }
 /** -------------------Hero-------------------- */
 /** -------------------roasted ----------------- */
@@ -180,3 +218,5 @@ address {
   font-size: 18px;
   color: #dfdfdf;
 }
+/** -------------------roasted ----------------- */
+/** --------------------Catalog------------------ */
