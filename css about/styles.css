@@ -53,6 +53,12 @@ address {
   text-transform: uppercase;
   color: #fff;
 }
+label {
+  color: white;
+  display: block;
+}
+.input-text {
+}
 .active {
   color: #c7a17a;
   margin-left: 10px;
@@ -89,31 +95,7 @@ address {
   color: #fff;
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-.lang {
-}
-.input-text {
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #fff;
-  cursor: pointer;
-}
-.input-lang {
-  opacity: 0;
-}
-.input-lang:checked + .input-text {
-  color: #c7a17a;
-  
-}
-/* .input-text:hover {
-  color: #c7a17a;
-}
-.input-text:focus {
-  color: #c7a17a;
-}
-.input-text:active {
-  color: #c7a17a;
-} */
+
 .header-link:hover {
   color: #c7a17a;
 }
@@ -143,65 +125,6 @@ address {
 }
 .header-img {
 }
-
-/** -------------------header------------------------- */
-/** --------------------HERO-------------------------- */
-.hero {
-  background-image: url(../img/hero.jpg);
-  background-repeat: no-repeat;
-  min-width: 1200px;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.hero-wrap {
-}
-.hero-title {
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 144%;
-  text-transform: uppercase;
-  color: #fff;
-  width: 571px;
-  margin-bottom: 35px;
-}
-.hero-text {
-  font-weight: 400;
-  font-size: 18px;
-  color: #dfdfdf;
-  width: 535px;
-  margin-bottom: 35px;
-}
-.hero-btn-buy {
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #c7a17a;
-  border-radius: 10px;
-  width: 200px;
-  height: 50px;
-  margin-right: 20px;
-}
-.hero-btn-read {
-  width: 200px;
-  height: 50px;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: rgba(199, 161, 122, 0);
-  border: 1px solid #666681;
-  border-radius: 10px;
-  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-}
-.hero-btn-read:hover {
-  background-color: #c7a17a;
-}
 .header-icons {
 }
 .header-icon-link {
@@ -217,32 +140,12 @@ address {
   height: 6px;
   border-radius: 50%;
 }
+/** -------------------header------------------------- */
+/** --------------------HERO-------------------------- */
+
 /** -------------------Hero-------------------- */
 /** -------------------roasted ----------------- */
-.roasted {
-  display: flex;
-  margin-top: 100px;
-}
-.roasted-wrap {
-  background-color: #14141d;
-  border-radius: 10px;
-  padding: 30px;
-}
-.roasted-img {
-}
-.roasted-title {
-  font-weight: 900;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 15px;
-  margin-top: 30px;
-}
-.roasted-text {
-  font-weight: 400;
-  font-size: 18px;
-  color: #dfdfdf;
-}
+
 /** -------------------roasted ----------------- */
 /** --------------------Catalog------------------ */
 .catalog {
@@ -306,44 +209,6 @@ address {
 /** --------------------news------------------ */
 /** --------------------news------------------ */
 
-.news {
-  margin-bottom: 80px;
-}
-.news-title {
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 144%;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 40px;
-}
-.news-list {
-  display: flex;
-  gap: 21px;
-}
-.news-item-list {
-  background-color: #14141d;
-  border-radius: 10px;
-}
-.news-img {
-}
-.news-title-text {
-  font-weight: 900;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.news-text {
-  font-weight: 400;
-  font-size: 16px;
-  color: #dfdfdf;
-  margin-top: 15px;
-  margin-bottom: 40px;
-}
-.news-wrap-text {
-  padding: 25px;
-}
-
 /** --------------------footer------------------ */
 /** --------------------footer------------------ */
 .footer {
@@ -378,6 +243,9 @@ address {
   color: #fff;
   transition: all 0.3s ease;
 }
+.footer-navigation-list-link:hover {
+  color: #c7a17a;
+}
 .footer-contacts {
 }
 .footer-contacts-menu {
@@ -391,9 +259,6 @@ address {
   text-transform: uppercase;
   color: #fff;
   transition: all 0.3s ease;
-}
-.footer-navigation-list-link:hover {
-  color: #c7a17a;
 }
 .footer-contacts-list-link:hover {
   color: #c7a17a;
