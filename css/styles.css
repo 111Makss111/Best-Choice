@@ -8,6 +8,7 @@ a {
 }
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 h1,
 h2,
@@ -47,12 +48,6 @@ address {
   justify-content: space-between;
   padding: 10px 0;
 }
-.header-lang {
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #fff;
-}
 .active {
   color: #c7a17a;
   margin-left: 10px;
@@ -80,6 +75,17 @@ address {
   display: flex;
   gap: 35px;
 }
+.header-btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header-btn:hover {
+  color: #c7a17a;
+}
 .header-list {
 }
 .header-link {
@@ -89,8 +95,6 @@ address {
   color: #fff;
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-.lang {
-}
 .input-text {
   font-weight: 600;
   font-size: 14px;
@@ -98,22 +102,6 @@ address {
   color: #fff;
   cursor: pointer;
 }
-.input-lang {
-  opacity: 0;
-}
-.input-lang:checked + .input-text {
-  color: #c7a17a;
-  
-}
-/* .input-text:hover {
-  color: #c7a17a;
-}
-.input-text:focus {
-  color: #c7a17a;
-}
-.input-text:active {
-  color: #c7a17a;
-} */
 .header-link:hover {
   color: #c7a17a;
 }

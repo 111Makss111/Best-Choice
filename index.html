@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./js/script.js">
-
 </head>
 
 <body>
@@ -26,12 +24,8 @@
     <header class="header-container container">
         <div class="lang-wrap">
             <div class="lang">
-                <form class="lang">
-                    <label class="input-text" for="language-radio">ua</label>
-                    <input class="input-lang" name="language" id="language-radio" type="radio">
-                    <label class="input-text" for="language-radio-checked">en</label>
-                    <input class="input-lang" name="language" id="language-radio-checked" type="radio">
-                </form>
+                <button onclick="switchLanguage('uk')" class="header-btn" type="button">ua</button>
+                <button onclick="switchLanguage('en')" class="header-btn" type="button">en</button>
             </div>
             <address class="header-address">
                 <a class="header-address-tel" href="tel:+371000000">+371000000</a>
@@ -41,16 +35,16 @@
             <nav class="header-navigation">
                 <ul class="header-menu-navigation">
                     <li class="header-list">
-                        <a class="header-link header-link-active" href="">Home</a>
+                        <a class="header-link header-link-active" href="" data-translate="home">Home</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">About</a>
+                        <a class="header-link" href="" data-translate="about">About</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">Menu</a>
+                        <a class="header-link" href="" data-translate="menu">Menu</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">Reservation</a>
+                        <a class="header-link" href="" data-translate="reservation">Reservation</a>
                     </li>
                 </ul>
             </nav>
@@ -76,11 +70,13 @@
                         <svg class="header-icons" width="24" height="25">
                             <use href="./img/icons.svg#iconcart"></use>
                         </svg>
-                        <span class="header-menu-event"></span> </a>
+                        <span class="header-menu-event"></span>
+                    </a>
                 </li>
             </ul>
         </div>
     </header>
+
     <main>
 
         <!-------------------hero----------------------->
@@ -90,7 +86,8 @@
             <div class="hero-wrap  container">
                 <h1 class="hero-title">Roasted coffee
                     best choice</h1>
-                <p class="hero-text">The coffee is brewed by first roasting the green coffee beans over hot
+                <p data-translate="paragraph" class="hero-text">The coffee is brewed by first roasting the green coffee
+                    beans over hot
                     coals in a brazier. given an opportunity to sample.</p>
                 <button type="button" class="hero-btn-buy">Buy now</button>
                 <button type="button" class="hero-btn-read">read more</button>
@@ -262,7 +259,7 @@
             </address>
         </div>
     </footer>
-    <script> </script>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>
