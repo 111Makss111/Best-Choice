@@ -1,8 +1,4 @@
-console.log("JavaScript is awesome!");
-console.log("Привіт Насть");
-const age = "20";
-console.log(age);
-const username = "Mango";
+let username;
 console.log(username);
 
 const translations = {
@@ -20,7 +16,7 @@ const translations = {
     menu: "Menu",
     reservation: "Reservation",
     paragraph:
-      "he coffee is brewed by first roasting the green coffee beans over hotcoals in a brazier. given an opportunity to sample.",
+      "he coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.",
   },
 };
 
