@@ -39,6 +39,11 @@ address {
   padding-left: 16px;
   padding-right: 16px;
 }
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 .header-container {
 }
 .lang {
