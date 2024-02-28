@@ -24,13 +24,10 @@
 
     <header class="header-container container">
         <div class="lang-wrap">
-            <form class="lang">
-                <label class="input-text" for="language-radio">ua</label>
-                <input class="input-lang" name="language" id="language-radio" type="radio">
-                <label class="input-text" for="language-radio-checked">en</label>
-                <input class="input-lang" name="language" id="language-radio-checked" type="radio">
-            </form>
-
+            <div class="lang">
+                <button onclick="switchLanguage('uk')" class="header-btn" type="button">ua</button>
+                <button onclick="switchLanguage('en')" class="header-btn" type="button">en</button>
+            </div>
             <address class="header-address">
                 <a class="header-address-tel" href="tel:+371000000">+371000000</a>
             </address>
@@ -39,16 +36,16 @@
             <nav class="header-navigation">
                 <ul class="header-menu-navigation">
                     <li class="header-list">
-                        <a class="header-link header-link-active" href="">Home</a>
+                        <a class="header-link header-link-active" href="" data-translate="home">Home</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">About</a>
+                        <a class="header-link" href="" data-translate="about">About</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">Menu</a>
+                        <a class="header-link" href="" data-translate="menu">Menu</a>
                     </li>
                     <li class="header-list">
-                        <a class="header-link" href="">Reservation</a>
+                        <a class="header-link" href="" data-translate="reservation">Reservation</a>
                     </li>
                 </ul>
             </nav>
@@ -58,7 +55,7 @@
                 <li class="header-menu-list">
                     <a class="header-icon-link" href="">
                         <svg width="24" height="25">
-                            <use href="./img/icons.svg#iconuser"></use>
+                            <use href="./img/icons.svg#iconcart"></use>
                         </svg>
                     </a>
                 </li>
@@ -74,59 +71,69 @@
                         <svg class="header-icons" width="24" height="25">
                             <use href="./img/icons.svg#iconcart"></use>
                         </svg>
-                        <span class="header-menu-event"></span> </a>
+                        <span class="header-menu-event"></span>
+                    </a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
-
-        <!-------------------hero----------------------->
-        <!-------------------hero----------------------->
-
-
+        <section class="crema-section container">
+            <h2 class="crema-title">Lavazza Crema E Gusto</h2>
+            <div class="crema-section-wrap">
+                <div class="crema-wrap">
+                    <img class="crema-img" width="199px" height="400px" src="./img/product1.png" alt="">
+                </div>
+                <div class="crema-prise">
+                    <p class="crema-prise-text">$19.99</p>
+                    <p class="crema-prise-text-item">$29.99</p>
+                    <button class="crema-prise-btn">L</button>
+                    <button class="crema-prise-btn">XL</button>
+                    <button class="crema-prise-btn">XxL</button>
+                    <button class="crema-prise-btn">ADd to cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="description-section container">
+            <h2 class="description-title">Description</h2>
+            <ul class="description-list">
+                <li class="description-item">
+                    <p class="description-text">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are
+                        going to use a passage of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        All the Lorem Ipsum
+                        generators on the Internet tend to repeat predefined chunks as necessary, making this the first
+                        true generator on the
+                        Internet.</p>
+                </li>
+                <li class="description-item">
+                    <p class="description-text">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable.</p>
+                </li>
+                <li class="description-item">
+                    <p class="description-text">If you are going to use a passage of Lorem Ipsum, you need to be sure
+                        there isn't anything
+                        embarrassing hidden in the
+                        middle of text.</p>
+                </li>
+                <li class="description-item">
+                    <p class="description-text">All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                        chunks as necessary,
+                        making this the first true
+                        generator on the Internet.</p>
+                </li>
+            </ul>
+        </section>
         <!-------------------catalog----------------------->
         <!-------------------catalog----------------------->
         <section class="catalog container">
             <h2 class="catalog-title">Catalog</h2>
             <ul class="catalog-menu">
-                <li class="catalog-list">
-                    <a href="">
-                        <img src="./img/product1.png" alt="product-coffee" class="catalog-img" width="97" height="199">
-                        <h3 class="catalog-title-text">Lavazza coffee</h3>
-                        <div class="catalog-price">
-                            <p class="catalog-text">$19.99</p>
-                            <p class="catalog-text-max">$29.99</p>
-                            <svg class="catalog-icons-favorite" width="27" height="24">
-                                <use href="./img/icons.svg#iconfavorite"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li class="catalog-list">
-                    <a href="./abaut.html">
-                        <img src="./img/product2.png" alt="product-coffee" width="97" height="199" class="catalog-img">
-                        <h3 class="catalog-title-text">Lavazza coffee</h3>
-                        <div class="catalog-price">
-                            <p class="catalog-text">$19.99</p>
-                            <svg class="catalog-icons-favorite" width="27" height="24">
-                                <use href="./img/icons.svg#iconfavorite"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li class="catalog-list">
-                    <a href="./abaut.html">
-                        <img src="./img/product1.png" alt="product-coffee" width="97" height="199" class="catalog-img">
-                        <h3 class="catalog-title-text">Lavazza coffee</h3>
-                        <div class="catalog-price">
-                            <p class="catalog-text">$19.99</p>
-                            <svg class="catalog-icons-favorite" width="27" height="24">
-                                <use href="./img/icons.svg#iconfavorite"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
                 <li class="catalog-list">
                     <a href="./abaut.html">
                         <img src="./img/product1.png" alt="product-coffee" width="97" height="199" class="catalog-img">

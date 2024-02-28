@@ -391,3 +391,73 @@ header {
 .footer-contacts-list-link:hover {
   color: #c7a17a;
 }
+/*--------------- description ---------------*/
+.description-section {
+  padding: 80px 0;
+}
+.description-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 144%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.description-list {
+  list-style: disc;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #14141d;
+  padding: 30px;
+}
+.description-item {
+}
+.description-text {
+  font-size: 18px;
+  color: #dfdfdf;
+}
+/*-------------------- crema --------------------*/
+.crema-section {
+  padding: 80px 0;
+}
+.crema-title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 144%;
+  text-transform: uppercase;
+  color: #fff;
+}
+.crema-section-wrap {
+  display: flex;
+  gap: 14px;
+}
+.crema-wrap {
+  background-color: #14141d;
+  border-radius: 10px;
+  padding: 60px 293px;
+  width: 780px;
+}
+.crema-img {
+}
+.crema-prise {
+  background-color: #14141d;
+  border-radius: 10px;
+  width: 400px;
+  height: 249px;
+  padding: 30px;
+}
+.crema-prise-text {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.crema-prise-text-item {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: #818181;
+}
+
+.crema-prise-btn {
+}
