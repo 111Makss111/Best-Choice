@@ -426,6 +426,7 @@ header {
   line-height: 144%;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 56px;
 }
 .crema-section-wrap {
   display: flex;
@@ -458,6 +459,37 @@ header {
   text-decoration: line-through;
   color: #818181;
 }
-
+.crema-prise-text-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
 .crema-prise-btn {
+  border-radius: 10px;
+  background-color: #c7a17a;
+  padding: 14px 112px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.crema-prise-btn-size {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  padding: 4px;
+}
+.crema-prise-menu {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 30px;
 }
