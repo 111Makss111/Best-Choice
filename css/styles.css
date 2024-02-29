@@ -178,6 +178,12 @@ header {
   width: 200px;
   height: 50px;
   margin-right: 20px;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hero-btn-buy:hover,
+.hero-btn-buy:focus,
+.hero-btn-buy:active {
+  background-color: #85613d;
 }
 .hero-btn-read {
   width: 200px;
@@ -474,6 +480,12 @@ header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.crema-prise-btn:hover,
+.crema-prise-btn:focus,
+.crema-prise-btn:active {
+  background-color: #85613d;
 }
 .crema-prise-btn-size {
   font-weight: 700;
@@ -486,10 +498,17 @@ header {
   height: 50px;
   width: 50px;
   padding: 4px;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .crema-prise-menu {
   display: flex;
   align-items: baseline;
   gap: 10px;
   margin-bottom: 30px;
+}
+.crema-prise-btn-size:hover,
+.crema-prise-btn-size:focus,
+.crema-prise-btn-size:active {
+  color: #c7a17a;
+  border-color: #c7a17a;
 }
